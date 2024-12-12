@@ -5,17 +5,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Page Contents</h2>
+            <a href="garlicbread.html#title">Garlic Bread</a>
+            <a href="garlicbread.html#recipeintro">Recipe Introduction</a>
+            <a href="garlicbread.html#ingredients">Ingredients</a>
+            <a href="garlicbread.html#instructions">Instructions</a>
+         </div>
         <div class="flex-container">
-        <h1>Garlic Bread</h1>
+        <h1><a id=title></a>Garlic Bread</h1>
         <img src="garlicbread.jpg" alt="Garlic Bread">
         <h2>Prep Time: 10 minutes</h2>
         <h2>Cook Time: 15 minutes</h2>
         <h2>Total Minutes: 25 minutes</h2>
-        <h2>Introduction</h2>
+        <h2><a id="recipeintro"></a>Introduction</h2>
         <p>Garlic bread has always been one of my favourite starters and sides to order at a restaurant or eat at home. 
             I just love the crunchy texture combined with the fragrant herby flavour of the garlic bread. Plus garlic bread 
             can in itself be a blank canvas as you can top it with essentially anything including cheese, tomato, maybe a bit of pesto too! </p>
-        <h2>Ingredients</h2>
+        <h2><a id="ingredients"></a>Ingredients</h2>
         <p>1 Loaf of French/Italian Bread</p>
         <p>6 tbsp Butter</p>
         <p>2 Tbsp Olive Oil</p>
@@ -23,7 +31,7 @@
         <p>2 tbsp chopped Parsley</p>
         <p>1/8 tsp Salt</p>
         <p>1/4 tsp garlic powder</p>
-        <h2>Instructions</h2>
+        <h2><a id="instructions"></a>Instructions</h2>
         <p>1. Preheat the oven to 400 degrees Fahrenheit. In a bowl, stir together the room temperature butter, olive oil,
             minced garlic, garlic powder, chopped parsley and salt until relatively smooth (a few small lumps of butter is fine).
         </p>
@@ -35,4 +43,14 @@
         </p>
     </div>
     </body>
+    <script>
+        function openNav() {
+          document.getElementById("sidenav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidenav").style.display = "none";
+  
+        }
+        </script>
 </html>

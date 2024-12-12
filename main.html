@@ -8,9 +8,13 @@
         <link rel="stylesheet" href="styles.css">
      </head>
      <body>
-      <div class="sidenav">
+      <div id="sidenav" class="sidenav">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <h2>Page Contents</h2>
          <a href="main.html#title">My Fave Recipes</a>
+         <a href="main.html#intro">Intro</a>
+         <a href="main.html#othersites">Other Cooking Sites</a>
+         <a href="main.html#gotocontents">Go to Contents</a>
       </div>
       <div class="flex-container">
          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
@@ -19,26 +23,27 @@
         <!--The main image on the webpage (will add CSS to resize this later)-->
         <img src="carbonara.jpg" alt="Carbonara">
         <!--All of the below elements are the main content on the page (text, links etc.)-->
-        <p>Welcome to my interactive recipe book! This website will showcase some of my fave dishes to eat and how to make them. 
+        <p><a id=intro></a>Welcome to my interactive recipe book! This website will showcase some of my fave dishes to eat and how to make them. 
             The recipes listed aren't my own personal ways of cooking these, though I may add some extra tips based on what I know tastes good. 
         </p>
-        <h2>Other Great Websites</h2>
+        <h2><a id=othersites></a>Other Great Websites</h2>
         <p>These are some great well known cooking sites that also do some great recipes!</p>
         <a href="https://www.bbcgoodfood.com/recipes">BBC Good Food</a>
         <a href="https://www.bbc.co.uk/food/recipes">BBC's main Food website</a>
         <a href="https://thehappyfoodie.co.uk/recipes/">Happy Foodie's recipe collection</a>
 
-        <p>In the meantime, let's see what recipes are in my online collection, shall we?</p>
+        <p><a id="gotocontents"></a>In the meantime, let's see what recipes are in my online collection, shall we?</p>
         <a href="contents.html">Contents</a>
       </div>
      </body>
      <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("sidenav").style.display = "block";
       }
       
       function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("sidenav").style.display = "none";
+
       }
       </script>
 </html>

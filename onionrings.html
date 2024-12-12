@@ -5,22 +5,30 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Page Contents</h2>
+            <a href="onionrings.html#title">Onion Rings</a>
+            <a href="onionrings.html#recipeintro">Recipe Introduction</a>
+            <a href="onionrings.html#ingredients">Ingredients</a>
+            <a href="onionrings.html#instructions">Instructions</a>
+         </div>
         <div class="flex-container">
-        <h1>Onion Rings</h1>
+        <h1><a id="title"></a>Onion Rings</h1>
         <img src="onionrings.jpg" alt="Onion Rings">
         <h2>Prep Time: 10 minutes</h2>
         <h2>Cook Time: 10 minutes</h2>
         <h2>Total Time: 20 minutes</h2>
-        <h2>Introduction</h2>
+        <h2><a id="recipeintro"></a>Introduction</h2>
         <p>Onion Rings are a go to side dish for me, whether it's at home, when I get takeaway 
             or when I'm dining in a restaurant. I just love the crunchiness and chewiness 
             and the slight sweetness that you get from the onion. Please enjoy this recipe as much as I enjoy enjoy rings, hehe!</p>
-        <h2>Ingredient</h2>
+        <h2><a id="ingredients"></a>Ingredients</h2>
         <p>One large onion, sliced into seperated 1cm rings</p>
         <p>groundnut oil, for deep frying</p>
         <p>150g self-raising flour</p>
         <p>180ml sparkling water</p>
-        <h2>Instructions</h2>
+        <h2><a id="instructions"></a>Instructions</h2>
         <p>1. Use a fork to steady your onion and then slice the onion into rings about 1cm wide. Remove the skin and seperate the rings.</p>
         <p>2. Heat the oil to 180c in a heavy based pan - it should be no more than 1/3 full.</p>
         <p>3. Meanwhile put the flour and sparking water in a bowl and generously season. whisk together to form a batter</p>
@@ -29,4 +37,14 @@
         </p>
     </div>
     </body>
+    <script>
+        function openNav() {
+          document.getElementById("sidenav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidenav").style.display = "none";
+  
+        }
+        </script>
 </html>

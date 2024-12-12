@@ -5,20 +5,28 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Page Contents</h2>
+            <a href="espressomartini.html#title">Espresso Martini</a>
+            <a href="espressomartini.html#recipeintro">Recipe Introduction</a>
+            <a href="espressomartini.html#ingredients">Ingredients</a>
+            <a href="espressomartini.html#instructions">Instructions</a>
+         </div>
         <div class="flex-container">
-        <h1>Espresso Martini</h1>
+        <h1><a id=title></a>Espresso Martini</h1>
         <img src="espressomartini.png" alt="Espresso Martini">
-        <h2>Introduction</h2>
+        <h2><a id=£recipeintro></a>Introduction</h2>
         <p>The espresso martini is quite simply, to die for. If you are a coffee lover like me, this is the cocktail for you.
             The creamy hit from the froth on top of the liquid, the hit of the vodka flavour followed by the classic bitterness
             of coffee. I order this at every restaurant I go to for a reason.
         </p>
-        <h2>Ingredients</h2>
+        <h2><a id="ingredients"></a>Ingredients</h2>
         <p>50ml vodka (Jamie Oliver's recipe uses Grey Goose vodka)</p>
         <p>35ml coffee liqeur</p>
         <p>1 shot (25ml) of espresso</p>
         <p>Ice, for best way to serve it</p>
-        <h2>Instructions</h2>
+        <h2><a id="instructions"></a>Instructions</h2>
         <p>1. Add all the ingredients into your cocktail shaker.</p>
         <p>2. Put the other half of the shaker on top and give it a tap to lock it, then shake the shaker really well.
             You want the ice to smash up while chilling the liquid down to create the signature froth. Make sure to use fresh from the freezer ice as melting ice, will dilute the martini.
@@ -26,4 +34,14 @@
         <p>3. Garnish with 3 coffee beans and attempt to not drink it all in one go, haha!</p>
     </div>
     </body>
+    <script>
+        function openNav() {
+          document.getElementById("sidenav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidenav").style.display = "none";
+  
+        }
+        </script>
 </html>

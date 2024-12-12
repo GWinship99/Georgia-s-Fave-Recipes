@@ -5,17 +5,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Page Contents</h2>
+            <a href="main.html#title">Halloumi Fries</a>
+            <a href="main.html#recipeintro">Recipe Introduction</a>
+            <a href="main.html#ingredients">Ingredients</a>
+            <a href="main.html#instructions">Instructions</a>
+         </div>
         <div class="flex-container">
-        <h1>Halloumi Fries</h1>
+        <h1><a id="title"></a>Halloumi Fries</h1>
         <img src="halloumifries.jpg" alt="Halloumi Fries">
         <h2>Prep Time: 10 minutes</h2>
         <h2>Cook Time: 10 minutes</h2>
         <h2>Total Minutes: 20 minutes</h2>
-        <h2>Introduction</h2>
+        <h2><a id=recipeintro></a>Introduction</h2>
         <p>Halloumi Fries are a great alternative to normal fries and they are a personal fave of mine to nibble on before a hearty meal. This recipe uses a spicy yoghurt for the dipping sauce
             but my preferred dipping sauce that I highly recommend is sweet chilli. Enjoy these cheesy, chewy delights to your heart's content!
         </p>
-        <h2>Ingredients</h2>
+        <h2><a id="ingredients"></a>Ingredients</h2>
         <p>170g pot of Greek yoghurt</p>
         <p>1 lemon</p>
         <p> 1 tbsp rose harissa</p>
@@ -33,4 +41,14 @@
         <p>3. Sprinkle over the mint and za'atar, and serve with the lemon wedges and spicy yoghurt for dipping.</p>
     </div>
     </body>
+    <script>
+        function openNav() {
+          document.getElementById("sidenav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidenav").style.display = "none";
+  
+        }
+        </script>
 </html>
