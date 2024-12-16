@@ -5,6 +5,14 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Page Contents</h2>
+            <a href="sweetpotatofries.html#title">Onion Rings</a>
+            <a href="sweetpotatofries.html#recipeintro">Recipe Introduction</a>
+            <a href="sweetpotatofries.html#ingredients">Ingredients</a>
+            <a href="sweetpotatofries.html#instructions">Instructions</a>
+        </div>
         <div class="flex-container">
         <h1>Sweet Potato Fries</h1>
         <img src="sweetpotatofries.jpg" alt="Sweet Potato Fries">
@@ -33,6 +41,18 @@
         <p>6. Bake for 10 to 18 more minutes, or until the fries are crispy. You'll know they're almost done when the surface of the fries changes from a shiny orange to a matte orange. Keep an eye on them, as they can burn easily. 
             Sometimes the lower pan will be done before the top pan. Don't worry if the edges are a bit brown, they are caramelized.</p>
         <p>7. If desired, toss the fries with seasonings to taste. Serve warm! </p>
+        <a href="onionrings.html">Previous Recipe</a>
+        <a href="tiramisu.html">Next Recipe</a>
     </div>
     </body>
+    <script>
+        function openNav() {
+          document.getElementById("sidenav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidenav").style.display = "none";
+  
+        }
+        </script>
 </html>

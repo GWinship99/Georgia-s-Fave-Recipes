@@ -5,13 +5,21 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Page Contents</h2>
+            <a href="butterchicken.html#title">Butter Chicken</a>
+            <a href="butterchicken.html#recipeintro">Recipe Introduction</a>
+            <a href="butterchicken.html#ingredients">Ingredients</a>
+            <a href="butterchicken.html#instructions">Instructions</a>
+         </div>
         <div class="flex-container">
-        <h1>Butter Chicken</h1>
+        <h1><a id="title"></a>Butter Chicken</h1>
         <img src="butterchicken.jpg" alt="Butter Chicken">
         <h2>Prep Time: 10 minutes</h2>
         <h2>Cook Time: 25 minutes</h2>
         <h2>Total Minutes: 35 minutes</h2>
-        <h2>Introduction</h2>
+        <h2><a id="recipeintro"></a>Introduction</h2>
         <p>One of my go to orders that I love to get either from an Indian restaurant or from the Indian section at my local supermarket
             is this amazing, moreish, silky smooth Indian delicacy. I just love the taste and texture of this amazing dish so of course
             I had to include it in my book
@@ -42,6 +50,18 @@
         <p>5. Add the tomato passata, cream, sugar and salt. Also add the remaining marinade from the bowl and turn the heat down to low so it can simmer for 20 minutes. Add more salt to taste if need be.</p>
         <p>6. Garnish with coriander or cilantro and serve the now cook curry with your choice of rice.</p>
         <p>7. If you want some sides with your curry,I recommend naan bread and poppadoms!</p>
+        <a href="carbonara.html">Previous Recipe</a>
+        <a href="onionrings.html">Next Recipe</a>
     </div>
     </body>
+    <script>
+        function openNav() {
+          document.getElementById("sidenav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidenav").style.display = "none";
+  
+        }
+        </script>
 </html>
